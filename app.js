@@ -1,7 +1,7 @@
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js';
 import {getAuth,GoogleAuthProvider,signInWithPopup,signOut,onAuthStateChanged} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js';
 import {getFirestore,doc,collection,getDoc,setDoc,deleteDoc,onSnapshot,query,where,serverTimestamp} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-firestore.js';
-const config={apiKey:'AIzaSyDh5QFdK0riWVtX6uYVbdpS4S4BHbbgWQw',authDomain:'emre-os.firebaseapp.com',projectId:'emre-os',storageBucket:'emre-os.firebasestorage.app',messagingSenderId:'118613791',appId:'1:118613791:web:f1a22ecff71031916ff22a'};
+const config={apiKey:'AIzaSyDh5QFdKOriWVtX6uYVbdpS4S4BHbbgWQw',authDomain:'emre-os.firebaseapp.com',projectId:'emre-os',storageBucket:'emre-os.firebasestorage.app',messagingSenderId:'118613791',appId:'1:118613791:web:f1a22ecff71031916ff22a'};
 const app=initializeApp(config),auth=getAuth(app),db=getFirestore(app),$=id=>document.getElementById(id);
 const owner='emreunlenen@gmail.com',tutorSlots=['Ekin','Tarık','Tamay','Ulaş'];
 const cats=[['Arpej','Abel Carlevaro · 2. kitap'],['Pozisyon geçişi','Abel Carlevaro · 3. kitap'],['Legato','Abel Carlevaro · 4. kitap'],['Gam','Costas Cotsiolis · Do majör gamı'],['Hızlanma ve koordinasyon','Leo Brouwer · metot çalışmaları']];
